@@ -99,8 +99,8 @@ function creative_custom_posts() {
 		'exclude_from_search'   => false,
 		'publicly_queryable'    => true,
 		'capability_type'       => 'page',
-		//'menu_icon'       		=> 'dashicons-image-filter',
-		'menu_icon'       		=> get_bloginfo('template_directory').'/assets/img/customer-service.png',
+		'menu_icon'       		=> 'dashicons-image-filter',
+		//'menu_icon'       		=> get_bloginfo('template_directory').'/assets/img/customer-service.png',
 	
 	);
 	register_post_type( 'creative_services', $args );
