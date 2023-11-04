@@ -155,8 +155,7 @@ class creative_search_widget extends WP_Widget {
     // The construct part
     function __construct() {
         parent::__construct(
-            'creative_search_widget', 
-            __('Creative Search Widget', 'creative'),
+            'creative_search_widget', __('Creative Search Widget', 'creative'),
             array('description' => __( 'Simple Search widget', 'creative' ), ) 
         );
      
@@ -174,11 +173,11 @@ class creative_search_widget extends WP_Widget {
                     <div class="mb-5 wow slideInUp" data-wow-delay="0.1s">
                         
                             <form action="<?php echo home_url('/'); ?>" method="post">
-                            <div class="input-group">
-                            <input type="searh" name="s" class="form-control p-3" placeholder="Keyword" value="<?php echo get_search_query(); ?>">
-                            <button type="submit" class="btn btn-primary px-4"><i class="fa fa-search"></i></button>
-                            </div>    
-                        </form>
+                                <div class="input-group">
+                                    <input type="searh" name="s" class="form-control p-3" placeholder="Keyword" value="<?php echo get_search_query(); ?>">
+                                    <button type="submit" class="btn btn-primary px-4"><i class="fa fa-search"></i></button>
+                                </div>    
+                            </form>
                         
                     </div>
 <?php 
